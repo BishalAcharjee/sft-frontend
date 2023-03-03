@@ -6,7 +6,7 @@ function Blog() {
     <div>
       <section>
         <h1 className="text-center">
-          <span id="name">Our Blogs</span>
+          <span id="name">Our Blog</span>
         </h1>
         <div class="container">
           <div class="row row-cols-3 mt-3">
