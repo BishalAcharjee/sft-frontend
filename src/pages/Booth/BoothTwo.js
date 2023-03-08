@@ -11,7 +11,7 @@ const BoothTwo = () => {
     setUser(x);
   }, []);
   return (
-    <div>
+    <div className="ms-5">
       <section>
         <div class="card">
           <div class="card-body">

@@ -8,15 +8,20 @@ import { FiLinkedin } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import { FiMail } from "react-icons/fi";
 import Contact from "./Contact";
+import Blog from "../Blog/Blog";
+import "./Home.css";
 
 const Home = () => {
   return (
     <div className="bg-light">
-      <section className="bg-light">
+      <section className="bg-light bg-image ">
         <div className="container">
           <div className="row mt-5 ">
+            <div className="col-lg-6 col-sm-12">
+              <img className="img-fluid" src={logo} />
+            </div>
             <div
-              className="col-6 mt-4 d-flex align-content-center 
+              className="col-lg-6 col-sm-12 mt-4 d-flex align-content-center 
             flex-column p-5 "
             >
               <h1 className="mb-3">
@@ -29,25 +34,23 @@ const Home = () => {
                 medicines.
               </p>
               <div className="d-flex g-5">
-                <button
+                <Link
+                  to="/register"
                   type="button"
                   className="btn btn-warning text-light w-25 mb-5"
                 >
                   Get Started
-                </button>
+                </Link>
               </div>
-            </div>
-            <div className="col-6">
-              <img className="img-fluid" src={logo} />
             </div>
           </div>
         </div>
       </section>
 
-      <section id="about">
+      <section id="about" className="mb-5">
         <div className="container">
           <div className="row mt-5">
-            <div className="col-7">
+            <div className="col-lg-6 col-sm-12">
               <h1 className="p-3">
                 <span id="name">About us</span>
               </h1>
@@ -63,12 +66,13 @@ const Home = () => {
                 The users can raise a request to donate or avail the medicines.
               </p>
             </div>
-            <div className="col-5">
+            <div className="col-lg-6 col-sm-12">
               <img className="img-fluid" src={logoa} alt="" />
             </div>
           </div>
         </div>
       </section>
+      <Blog></Blog>
       <Contact></Contact>
       <footer className="bg-dark  p-5 text-light text-center">
         <div className="d-flex justify-content-center">

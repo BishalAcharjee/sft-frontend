@@ -14,7 +14,7 @@ const BoothOne = () => {
   return (
     <div>
       <section>
-        <div class="card ">
+        <div class="card">
           <div class="card-body">
             <img src={logobo} class="w-100 img-fluid" alt="" />
             <div class="card-body">

@@ -8,7 +8,10 @@ const AdminBoothList = () => {
       <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
           <div class="card h-100">
-            <img src={logobo} class="card-img-top w-50 img-fluid" alt="..." />
+            <div className="d-flex p-3">
+              <img src={logobo} class="card-img-top w-50 img-fluid" alt="..." />
+              <h4>Hellp</h4>
+            </div>
             <div class="card-body">
               <h5 class="card-title">Booth-1</h5>
               <Link
@@ -23,7 +26,10 @@ const AdminBoothList = () => {
         </div>
         <div class="col">
           <div class="card h-100">
-            <img src={logobo} class="card-img-top w-50 img-fluid" alt="..." />
+            <div className="d-flex p-3">
+              <img src={logobo} class="card-img-top w-50 img-fluid" alt="..." />
+              <h4>Hellp</h4>
+            </div>
             <div class="card-body">
               <h5 class="card-title">Booth-2</h5>
               <Link

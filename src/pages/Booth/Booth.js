@@ -9,7 +9,7 @@ const Booth = () => {
         <span id="name">Our Booths</span>
       </h1>
       <div class="row m-4 h-50">
-        <div class="d-flex col-sm-4">
+        <div class="d-flex col-lg-6 col-sm-12">
           <BoothOne></BoothOne>
           <BoothTwo></BoothTwo>
         </div>

@@ -3,15 +3,14 @@ import logob from "../../Img/logo 3.png";
 
 function Blog() {
   return (
-    <div>
+    <div className="mt-5">
       <section>
         <h1 className="text-center">
           <span id="name">Our Blog</span>
         </h1>
         <div class="container">
-          <div class="row row-cols-3 mt-3">
-            {/* =================== */}
-            <div class="col border border-2 border-warning">
+          <div class="row mt-3">
+            <div class="col-lg-4 col-sm-12 border border-2 border-warning">
               <div class="card-body d-flex flex-row">
                 <div class="card-body">
                   <iframe
@@ -26,8 +25,7 @@ function Blog() {
                 </div>
               </div>
             </div>
-            {/* =================== */}
-            <div class="col border border-2 border border-warning ">
+            <div class="col-lg-4 col-sm-12 border border-2 border border-warning ">
               <div class="card-body d-flex flex-row">
                 <div class="card-body">
                   <iframe
@@ -42,7 +40,7 @@ function Blog() {
                 </div>
               </div>
             </div>
-            <div class="col border border-2 border-warning">
+            <div class="col-lg-4 col-sm-12 border border-2 border-warning">
               <div class="card-body d-flex flex-row">
                 <div class="card-body">
                   <iframe
@@ -57,7 +55,7 @@ function Blog() {
                 </div>
               </div>
             </div>
-            <div class="col border border-2 border-warning">
+            <div class="col-lg-4 col-sm-12 border border-2 border-warning">
               <div class="card-body d-flex flex-row">
                 <div class="card-body">
                   <iframe
@@ -72,7 +70,7 @@ function Blog() {
                 </div>
               </div>
             </div>
-            <div class="col border border-2 border-warning">
+            <div class="col-lg-4 col-sm-12 border border-2 border-warning">
               <div class="card-body d-flex flex-row">
                 <div class="card-body">
                   <iframe
@@ -87,7 +85,7 @@ function Blog() {
                 </div>
               </div>
             </div>
-            <div class="col border border-2 border-warning">
+            <div class="col-lg-4 col-sm-12 border border-2 border-warning">
               <div class="card-body d-flex flex-row">
                 <div class="card-body">
                   <iframe
@@ -102,7 +100,7 @@ function Blog() {
                 </div>
               </div>
             </div>
-            <div class="col border border-2 border-warning">
+            <div class="col-lg-4 col-sm-12 border border-2 border-warning">
               <div class="card-body d-flex flex-row">
                 <div class="card-body">
                   <iframe
@@ -117,7 +115,7 @@ function Blog() {
                 </div>
               </div>
             </div>
-            <div class="col border border-2 border-warning">
+            <div class="col-lg-4 col-sm-12 border border-2 border-warning">
               <div class="card-body d-flex flex-row">
                 <div class="card-body">
                   <iframe
@@ -132,7 +130,7 @@ function Blog() {
                 </div>
               </div>
             </div>
-            <div class="col border border-2 border-warning">
+            <div class="col-lg-4 col-sm-12 border border-2 border-warning">
               <div class="card-body d-flex flex-row">
                 <div class="card-body">
                   <iframe
@@ -150,10 +148,6 @@ function Blog() {
           </div>
         </div>
       </section>
-
-      <footer className="bg-dark  p-5 text-light text-center">
-        ©support-for-tomorrow
-      </footer>
     </div>
   );
 }
