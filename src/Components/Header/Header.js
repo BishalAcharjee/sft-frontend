@@ -11,6 +11,8 @@ const Header = () => {
   useEffect(() => {
     const x = getUserFromLS();
     setUser(x);
+    console.log(x);
+    console.log(user);
   }, []);
 
   console.log(user);
@@ -66,7 +68,7 @@ const Header = () => {
                     Booth
                   </Link>
                 </li>
-
+                {console.log(user)}
                 {user ? (
                   <>
                     <li className="nav-item" style={{ color: "red" }}>

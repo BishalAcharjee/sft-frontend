@@ -1,14 +1,13 @@
 import React, { useEffect, useState } from "react";
 import logo from "../../Img/logo 1.png";
 import logoa from "../../Img/logo 5.png";
-import { FiMail } from "react-icons/fi";
-import { FiUser } from "react-icons/fi";
-import { FiEdit } from "react-icons/fi";
 import { FiFacebook } from "react-icons/fi";
 import { FiTwitter } from "react-icons/fi";
 import { FiInstagram } from "react-icons/fi";
 import { FiLinkedin } from "react-icons/fi";
 import { Link } from "react-router-dom";
+import { FiMail } from "react-icons/fi";
+import Contact from "./Contact";
 
 const Home = () => {
   return (
@@ -70,91 +69,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-
-      <section id="contact">
-        <div className="container pt-5 pb-5">
-          <h1 className="text-center">
-            <span id="name">Stay In Touch</span>
-          </h1>
-          <div className="row justify-content-center">
-            <div className="col-12 col-md-8 col-lg-6 pb-5" />
-
-            <form action="mail.php" method="post">
-              <div className="card border-warning rounded-5">
-                <div className="card-header p-">
-                  <div className="text-center py-2">
-                    <h3>
-                      <FiMail /> Contact Us
-                    </h3>
-                    <p className="m-0">Fillup The Information</p>
-                  </div>
-                </div>
-                <div className="card-body p-3">
-                  <div className="form-group">
-                    <div className="input-group mb-2">
-                      <div className="input-group-prepend">
-                        <div className="input-group-text">
-                          <FiUser />
-                        </div>
-                      </div>
-                      <input
-                        type="text"
-                        className="form-control"
-                        id="yname"
-                        name="name"
-                        placeholder="Your Name"
-                        required
-                      />
-                    </div>
-                  </div>
-                  <div className="form-group">
-                    <div className="input-group mb-2">
-                      <div className="input-group-prepend">
-                        <div className="input-group-text">
-                          <FiMail />
-                        </div>
-                      </div>
-                      <input
-                        type="email"
-                        className="form-control"
-                        id="yemail"
-                        name="email"
-                        placeholder="youremail@gmail.com"
-                        required
-                      />
-                    </div>
-                  </div>
-
-                  <div className="form-group">
-                    <div className="input-group mb-2">
-                      <div className="input-group-prepend">
-                        <div className="input-group-text">
-                          <FiEdit />
-                        </div>
-                      </div>
-                      <textarea
-                        className="form-control"
-                        placeholder="Your text here...."
-                        required
-                      ></textarea>
-                    </div>
-                  </div>
-
-                  <div className="text-center">
-                    <input
-                      type="submit"
-                      value="Send"
-                      className="btn btn-warning text-light btn-block
-                       rounded-3 py-2"
-                    />
-                  </div>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </section>
-
+      <Contact></Contact>
       <footer className="bg-dark  p-5 text-light text-center">
         <div className="d-flex justify-content-center">
           <div>

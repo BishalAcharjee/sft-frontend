@@ -1,6 +1,6 @@
 import React from "react";
 
-const MedicineListRow = ({ medicineData, refetch }) => {
+const AdminMedicineRow = ({ medicineData }) => {
   const { fname, description, address, _id, status } = medicineData;
   const handleAccepted = () => {
     fetch(`http://localhost:6060/medicine/${_id}`, {
@@ -14,8 +14,8 @@ const MedicineListRow = ({ medicineData, refetch }) => {
       })
       .then((data) => {
         if (data.modifiedCount > 0) {
-          refetch();
           alert(`Successfully Accepted`);
+          window.location.reload(false);
         }
       });
   };
@@ -29,8 +29,8 @@ const MedicineListRow = ({ medicineData, refetch }) => {
       })
       .then((data) => {
         if (data.deletedCount > 0) {
-          refetch();
           alert(`Successfully Deleted`);
+          window.location.reload(false);
         }
       });
   };
@@ -43,16 +43,12 @@ const MedicineListRow = ({ medicineData, refetch }) => {
       <td>{address}</td>
       <td>
         {status == "accepted" ? (
-          <span
-            class="text-dark fw-bold btn btn-outline-
-warning"
-          >
+          <span class="text-dark fw-bold btn btn-outline-warning">
             Accepted
           </span>
         ) : (
           <button
-            class="text-dark fw-bold btn btn-outline-
-warning"
+            class="text-dark fw-bold btn btn-outline-warning"
             onClick={() => handleAccepted(_id)}
           >
             Accept
@@ -61,8 +57,7 @@ warning"
       </td>
       <td>
         <button
-          class="text-dark fw-bold btn btn-outline-
-warning"
+          class="text-dark fw-bold btn btn-outline-warning"
           onClick={handleDelete}
         >
           Delete
@@ -72,4 +67,4 @@ warning"
   );
 };
 
-export default MedicineListRow;
+export default AdminMedicineRow;

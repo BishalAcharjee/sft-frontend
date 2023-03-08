@@ -10,17 +10,20 @@ const Login = () => {
   const handleLogin = () => {
     postData(`${db_uri}/users/login`, form).then((data) => {
       console.log(data);
+
       if (data.status != 200) {
         setError(data.msg);
-      } else if (data.role == "admin") {
-        navigate("/admin");
-      } else if (data.role == "Booth-1") {
-        navigate("/boothoneinfo");
-      } else if (data.role == "Booth-2") {
-        navigate("/boothtwoinfo");
       } else {
         setUserToLS(data);
-        navigate("/");
+        if (data.role == "admin") {
+          navigate("/admin");
+        } else if (data.role == "Booth-1") {
+          navigate("/boothoneinfo");
+        } else if (data.role == "Booth-2") {
+          navigate("/boothtwoinfo");
+        } else {
+          navigate("/");
+        }
       }
     });
   };

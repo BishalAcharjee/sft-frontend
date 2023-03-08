@@ -12,6 +12,8 @@ import BoothForm from "./pages/Booth/BoothForm";
 import BoothFormTwo from "./pages/Booth/BoothFormTwo";
 import MedicineListOne from "./pages/Admin/MedicineListOne";
 import MedicineListTwo from "./pages/Admin/MedicineListTwo";
+import AdminMedicineOne from "./pages/Admin/AdminMedicineOne";
+import AdminMedicineTwo from "./pages/Admin/AdminMedicineTwo";
 
 function App() {
   return (
@@ -30,6 +32,14 @@ function App() {
           <Route path="/boothformtwo" element={<BoothFormTwo />}></Route>
           <Route path="/boothoneinfo" element={<MedicineListOne />}></Route>
           <Route path="/boothtwoinfo" element={<MedicineListTwo />}></Route>
+          <Route
+            path="/adminboothoneinfo"
+            element={<AdminMedicineOne />}
+          ></Route>
+          <Route
+            path="/adminboothtwoinfo"
+            element={<AdminMedicineTwo />}
+          ></Route>
         </Routes>
       </Router>
     </div>
