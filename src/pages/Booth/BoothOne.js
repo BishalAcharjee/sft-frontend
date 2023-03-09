@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import logobo from "../../Img/logo_4.png";
+import logobo from "../../Img/p1.jpg";
 import { getUserFromLS } from "../../util/fetcher";
 
 const BoothOne = () => {
@@ -18,10 +18,10 @@ const BoothOne = () => {
           <div class="card-body">
             <img src={logobo} class="w-100 img-fluid" alt="" />
             <div class="card-body">
-              <p class="card-text">
-                <p>Booth No : </p>
-                <p>Name : </p>
-                <p>Location : </p>
+              <p class="card-text ">
+                <p>Booth No : 01 </p>
+                <p className="fw-bold">Name : The Rahman Pharmacy </p>
+                <p>Location : Jitumiyar Point, Sylhet </p>
               </p>
               <div class="d-grid gap-2">
                 {user?.name ? (

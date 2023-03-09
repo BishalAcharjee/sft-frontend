@@ -44,14 +44,14 @@ const MedicineListRow = ({ medicineData, refetch }) => {
       <td>
         {status == "accepted" ? (
           <span
-            class="text-dark fw-bold btn btn-outline-
+            class="text-warning fw-bold btn btn-outline-
 warning"
           >
             Accepted
           </span>
         ) : (
           <button
-            class="text-dark fw-bold btn btn-outline-
+            class="text-warning fw-bold btn btn-outline-
 warning"
             onClick={() => handleAccepted(_id)}
           >
@@ -61,8 +61,8 @@ warning"
       </td>
       <td>
         <button
-          class="text-dark fw-bold btn btn-outline-
-warning"
+          class="text-danger fw-bold btn btn-outline-
+danger"
           onClick={handleDelete}
         >
           Delete
