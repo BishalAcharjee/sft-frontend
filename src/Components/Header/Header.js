@@ -71,7 +71,10 @@ const Header = () => {
                 {console.log(user)}
                 {user ? (
                   <>
-                    <li className="nav-item" style={{ color: "red" }}>
+                    <li
+                      className="nav-item me-3 mt-2 font fw-bold"
+                      style={{ color: "red" }}
+                    >
                       {user.name}
                     </li>
                     <li className="nav-item">
