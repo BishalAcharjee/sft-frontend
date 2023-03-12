@@ -4,6 +4,8 @@ import { Link, useNavigate } from "react-router-dom";
 
 import { getUserFromLS, setUserToLS } from "../../util/fetcher";
 
+import logomain from "../../Img/logo 5.png";
+
 const Header = () => {
   const [user, setUser] = useState({});
 
@@ -22,7 +24,7 @@ const Header = () => {
       <div className="top">
         <nav className="navbar navbar-expand-lg bg-light">
           <div className="container-fluid">
-            <a className="navbar-brand">Support For Tomorrow</a>
+            <a className="navbar-brand fw-bold">Support For Tomorrow</a>
             <button
               className="navbar-toggler"
               type="button"

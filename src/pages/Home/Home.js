@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import logo from "../../Img/logo 1.png";
 import logoa from "../../Img/logo 5.png";
+import logoqr from "../../Img/sft.png";
 import { FiFacebook } from "react-icons/fi";
 import { FiTwitter } from "react-icons/fi";
 import { FiInstagram } from "react-icons/fi";
@@ -68,6 +69,30 @@ const Home = () => {
             </div>
             <div className="col-lg-6 col-sm-12">
               <img className="img-fluid" src={logoa} alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div className="container">
+          <div className="row mt-5">
+            <div className="col-lg-6 col-sm-12">
+              <img
+                className="img-fluid h-30 w-50 mx-auto d-block"
+                src={logoqr}
+                alt=""
+              />
+            </div>
+            <div className="col-lg-6 col-sm-12">
+              <h1 className="p-3">
+                <span id="qr">Our QR Scanner</span>
+              </h1>
+              <h3 className="p-3">Coming Soon.....</h3>
+              <p className="ps-3">
+                In our future a user don't have to fill-up the form on our
+                website. We will try to give our every booth a QR code for their
+                own portal. Than the user could be able to register medicine to
+                direct booth and it will reduce the user effort.
+              </p>
             </div>
           </div>
         </div>
