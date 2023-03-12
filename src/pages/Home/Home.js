@@ -87,7 +87,7 @@ const Home = () => {
                 <span id="qr">Our QR Scanner</span>
               </h1>
               <h3 className="p-3">Coming Soon.....</h3>
-              <p className="ps-3">
+              <p className="ps-3 ">
                 In our future a user don't have to fill-up the form on our
                 website. We will try to give our every booth a QR code for their
                 own portal. Than the user could be able to register medicine to

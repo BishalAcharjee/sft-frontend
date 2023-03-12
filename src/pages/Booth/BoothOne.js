@@ -33,12 +33,18 @@ const BoothOne = () => {
                     Submit
                   </Link>
                 ) : (
-                  <button
-                    class="btn btn-warning fs-5 fw-bold disabled"
-                    type="button"
-                  >
-                    Submit
-                  </button>
+                  <>
+                    <p className="text-danger">
+                      Only Registered User Can Submit
+                    </p>
+
+                    <button
+                      class="btn btn-warning fs-5 fw-bold disabled"
+                      type="button"
+                    >
+                      Submit
+                    </button>
+                  </>
                 )}
               </div>
             </div>
